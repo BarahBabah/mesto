@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <img class="header__logo" src="./images/__logo.svg" alt="Место">
+  </header>
+  <main class="content">
+    <section class="profile">
+      <img class="profile__avatar" src="./images/avatar.jpg" alt="аватар">
+      <div class="profile__info">
+        <h1 class="profile__name">Жак-Ив Кусто</h1>
+        <button class="profile__edit-button pointer"></button>
+        <p class="profile__about-me">Исследователь океана</p>
+      </div>
+      <button class="profile__add-button pointer"></button>
+    </section>
+    <!-- <div class="popup popup_opened">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+      </div>
+    </div> -->
+    <section class="gallary">
+      <ul class="gallary__list">
+        <li class="gallary__item">
+          <figure class="gallary__figure">
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
+            <figcaption class="gallary__figcaption">
+              <h2 class="gallary__figcaption-title">Карачаевск</h2>
+              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+            </figcaption>
+          </figure>
+        </li>
+        <li class="gallary__item">
+          <figure class="gallary__figure">
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1404681-unsplash.png" alt="Эльбрус">
+            <figcaption class="gallary__figcaption">
+              <h2 class="gallary__figcaption-title">Гора Эльбрус</h2>
+              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+            </figcaption>
+          </figure>
+        </li>
+        <li class="gallary__item">
+          <figure class="gallary__figure">
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+            <figcaption class="gallary__figcaption">
+              <h2 class="gallary__figcaption-title">Домбай</h2>
+              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+            </figcaption>
+          </figure>
+        </li>
+        <li class="gallary__item">
+          <figure class="gallary__figure">
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1404681-unsplash.png" alt="Эльбрус">
+            <figcaption class="gallary__figcaption">
+              <h2 class="gallary__figcaption-title">Гора Эльбрус</h2>
+              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+            </figcaption>
+          </figure>
+        </li>
+        <li class="gallary__item">
+          <figure class="gallary__figure">
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1556355-unsplash.png" alt="Домбай">
+            <figcaption class="gallary__figcaption">
+              <h2 class="gallary__figcaption-title">Домбай</h2>
+              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+            </figcaption>
+          </figure>
+        </li>
+        <li class="gallary__item">
+          <figure class="gallary__figure">
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
+            <figcaption class="gallary__figcaption">
+              <h2 class="gallary__figcaption-title">Карачаево-Черкес</h2>
+              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+  </footer>
+
+</body>
+
+</html>

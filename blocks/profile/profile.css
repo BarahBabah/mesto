@@ -1,0 +1,15 @@
+.profile{
+  justify-content: center;
+  display: block;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width:880px) {
+  .profile{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 51px;
+  }
+}
