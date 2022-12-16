@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 619px) {
   .popup__close {
-    top: auto;
+    
     left: auto;
     min-width: 32px;
     min-height: 32px;
