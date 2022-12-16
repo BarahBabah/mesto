@@ -1,11 +1,10 @@
-<!-- # Проект: Путешествие по России
+ # Проект: Mesto
 ------
-# [Git Pages](https://barahbabah.github.io/russian-travel/)
+# [Git Pages](https://barahbabah.github.io/mesto/)
 ## Обзор
-* Одностраничный адаптивный сайт(320px/768px/1024px 1280px).
-* Сайт с кратким изложением о знаменитых достопремечательностях России.
-* Изображения не через srcset.
-* CSS/HTML
+* Одностраничный адаптивный сайт.
+* Сайт с простой реализацией профиля и галереи.
+* CSS/HTML/JS
 ## Инструкция
 Для того, чтобы всё работало стабильно нужен браузер:
 * Opera 12.1 и выше;
@@ -21,4 +20,4 @@
 **Novel**  
 ### Дополнительная информация
 **Макет Figma по которому сделан адаптив**
-* [Ссылка на макет в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0) -->
+* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=28212%3A2&t=veuacAaeVtoYftEC-0)
