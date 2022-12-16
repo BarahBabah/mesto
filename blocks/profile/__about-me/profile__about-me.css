@@ -1,4 +1,10 @@
 .profile__about-me {
+  max-width: 188.250px;
+  min-width: 157.641px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* сверху мои приколы */
   margin: 0;
   /* шрифт */
   font-style: normal;
@@ -14,5 +20,6 @@
     font-size: 18px;
     line-height: 22px;
     text-align: start;
+    max-width: 336px;
   }
 }
