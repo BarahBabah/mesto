@@ -8,13 +8,11 @@
   min-height: 19px;
 }
 
-.gallary__like {
+.gallary__like:hover {
+  opacity: 0.5;
   cursor: pointer;
 }
 
-.gallary__like:hover {
-  opacity: 0.5;
-}
 @media screen and (min-width:619px) {
   .gallary__like {
     margin-right: 20px;

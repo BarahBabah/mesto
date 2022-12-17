@@ -13,12 +13,9 @@
   left: 261px;
 }
 
-.popup__close {
-  cursor: pointer;
-}
-
 .popup__close:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 619px) {
