@@ -1,19 +1,27 @@
-.profile__add-button{
+.profile__add-button {
   margin: 0;
-  background-color: black;
+  background-color: transparent;
   padding: 0;
-  color:black;
+  color: black;
   border: none;
   background-image: url(../../../images/AddButton.svg);
   min-width: 282px;
   min-height: 50px;
 }
+
+.profile__add-button {
+  cursor: pointer;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 880px) {
-  .profile__add-button{
-  margin-left: auto;
-  background-image: url(../../../images/smallAddButton.svg);
-  min-width: 150px;
-  max-height: 50px;
-  background-repeat:no-repeat;
+  .profile__add-button {
+    margin-left: auto;
+    background-image: url(../../../images/smallAddButton.svg);
+    min-width: 150px;
+    background-repeat: no-repeat;
   }
 }

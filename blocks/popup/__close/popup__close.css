@@ -13,9 +13,16 @@
   left: 261px;
 }
 
+.popup__close {
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 619px) {
   .popup__close {
-    
     left: auto;
     min-width: 32px;
     min-height: 32px;

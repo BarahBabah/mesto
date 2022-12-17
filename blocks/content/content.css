@@ -2,10 +2,6 @@
   margin: 0 19px 48px 19px;
 }
 
-/* @media screen and (min-width: 321px) {
-  .content{
-  }
-} */
 @media screen and (min-width:880px) {
   .content {
     margin: 0;

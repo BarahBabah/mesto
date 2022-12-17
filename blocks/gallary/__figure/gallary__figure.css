@@ -1,8 +1,8 @@
-.gallary__figure{
+.gallary__figure {
   background-position: bottom left;
   background-color: white;
   width: 282px;
-  height: 361px;
+  min-height: 361px;
   border-radius: 10px;
   margin: 0;
   padding: 0;

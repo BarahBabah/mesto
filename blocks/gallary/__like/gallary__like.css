@@ -1,4 +1,22 @@
-.gallary__like{
+.gallary__like {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  background-image: url(../../../images/like.svg);
   margin: 0 30px 0 auto;
-  max-height: 19px;
+  min-width: 22px;
+  min-height: 19px;
+}
+
+.gallary__like {
+  cursor: pointer;
+}
+
+.gallary__like:hover {
+  opacity: 0.5;
+}
+@media screen and (min-width:619px) {
+  .gallary__like {
+    margin-right: 20px;
+  }
 }

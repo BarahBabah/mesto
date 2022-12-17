@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
@@ -19,22 +18,22 @@
       <img class="profile__avatar" src="./images/avatar.jpg" alt="аватар">
       <div class="profile__info">
         <h1 class="profile__name">Жак-Ив Кусто</h1>
-        <button class="profile__edit-button pointer"></button>
+        <button type="button" class="profile__edit-button"></button>
         <p class="profile__about-me">Исследователь океана</p>
       </div>
-      <button class="profile__add-button pointer"></button>
+      <button type="button" class="profile__add-button"></button>
       <div class="popup">
         <div class="popup__container">
-          <button class="popup__close pointer"></button>
+          <button type="button" class="popup__close"></button>
           <h3 class="popup__title">Редактировать профиль</h3>
-          <form class="popup__form">
+          <form name="popup" class="popup__form">
             <label class="popup__label">
-              <input type="text" class="popup__name">
+              <input name="nickname" id="popup-name" type="text" class="popup__input" required>
             </label>
             <label class="popup__label">
-              <input type="text" class="popup__job">
+              <input name="job" id="popup-job" type="text" class="popup__input" required>
             </label>
-            <input class="popup__submit" type="submit" value="Сохранить">
+            <button class="popup__submit" type="submit">Сохранить</button>
           </form>
         </div>
       </div>
@@ -46,7 +45,7 @@
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Карачаевск</h3>
-              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+              <button type="button" class="gallary__like"></button>
             </figcaption>
           </figure>
         </li>
@@ -55,7 +54,7 @@
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1404681-unsplash.png" alt="Эльбрус">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Гора Эльбрус</h3>
-              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+              <button type="button" class="gallary__like"></button>
             </figcaption>
           </figure>
         </li>
@@ -64,7 +63,7 @@
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1556355-unsplash.png" alt="Домбай">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Домбай</h3>
-              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+              <button type="button" class="gallary__like"></button>
             </figcaption>
           </figure>
         </li>
@@ -73,7 +72,7 @@
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1404681-unsplash.png" alt="Эльбрус">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Гора Эльбрус</h3>
-              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+              <button type="button" class="gallary__like"></button>
             </figcaption>
           </figure>
         </li>
@@ -82,7 +81,7 @@
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1556355-unsplash.png" alt="Домбай">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Домбай</h3>
-              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+              <button type="button" class="gallary__like"></button>
             </figcaption>
           </figure>
         </li>
@@ -91,7 +90,7 @@
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Карачаево-Черкес</h3>
-              <img class="gallary__like pointer" src="./images/like.svg" alt="лайк">
+              <button type="button" class="gallary__like"></button>
             </figcaption>
           </figure>
         </li>
@@ -101,7 +100,7 @@
   <footer class="footer">
     <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
   </footer>
-  <script src="./pages/index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
