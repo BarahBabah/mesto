@@ -8,20 +8,25 @@ buttonEdit.addEventListener("click", (evt) => {
   jobInput.value = profileJob.textContent;
 });
 // закрытие
+
 popupClose.addEventListener("click", (evt) => {
-  aboutPopup.classList.remove("popup_opened");
+  closer();
 });
+function closer (evt){
+  aboutPopup.classList.remove("popup_opened");
+}
 // 
-let formElement = document.querySelector(".popup__form"),
+const formElement = document.querySelector(".popup__form"),
   nameInput = formElement.querySelector("#popup-name"),
   jobInput = formElement.querySelector("#popup-job"),
   profileName = document.querySelector(".profile__name"),
   profileJob = document.querySelector(".profile__about-me");
+
 function handleFormSubmit(evt) {
   evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
-  aboutPopup.classList.remove("popup_opened");
+  closer();
 }
 
 // Прикрепляем обработчик к форме:
