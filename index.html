@@ -33,11 +33,30 @@
           </form>
         </div>
       </div>
+      <div class="popup popup__addcard">
+        <div class="popup__container">
+          <button type="button" class="popup__close"></button>
+          <h3 class="popup__title">Новое место</h3>
+          <form name="popup" class="popup__form">
+            <input name="image" id="popup-addcard-name" type="text" class="popup__input" required>
+            <input name="link" id="popup-addcard-link" type="text" class="popup__input" required>
+            <button class="popup__submit" type="submit">Создать</button>
+          </form>
+        </div>
+      </div>
     </section>
     <section class="gallary">
+            <div class="popup popup__view-card">
+        <div class="popup__container">
+          <button type="button" class="popup__close"></button>
+          <img src="#" alt="name" class="card__image">
+          <h2 class="card__title"></h2>
+        </div>
+      </div>
       <ul class="gallary__list">
         <li class="gallary__item">
           <figure class="gallary__figure">
+            <button class="gallary__trash"></button>
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Карачаевск</h3>
@@ -47,6 +66,7 @@
         </li>
         <li class="gallary__item">
           <figure class="gallary__figure">
+            <button class="gallary__trash"></button>
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1404681-unsplash.png" alt="Эльбрус">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Гора Эльбрус</h3>
@@ -56,6 +76,7 @@
         </li>
         <li class="gallary__item">
           <figure class="gallary__figure">
+            <button class="gallary__trash"></button>
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1556355-unsplash.png" alt="Домбай">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Домбай</h3>
@@ -65,6 +86,7 @@
         </li>
         <li class="gallary__item">
           <figure class="gallary__figure">
+            <button class="gallary__trash"></button>
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1404681-unsplash.png" alt="Эльбрус">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Гора Эльбрус</h3>
@@ -74,6 +96,7 @@
         </li>
         <li class="gallary__item">
           <figure class="gallary__figure">
+            <button class="gallary__trash"></button>
             <img class="gallary__image" src="./images/gallary/kirill-pershin-1556355-unsplash.png" alt="Домбай">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Домбай</h3>
@@ -83,7 +106,8 @@
         </li>
         <li class="gallary__item">
           <figure class="gallary__figure">
-            <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаевск">
+            <button class="gallary__trash"></button>
+            <img class="gallary__image" src="./images/gallary/kirill-pershin-1088404-unsplash.png" alt="Карачаево-Черкессия">
             <figcaption class="gallary__figcaption">
               <h3 class="gallary__figcaption-title">Карачаево-Черкес</h3>
               <button type="button" class="gallary__like"></button>
@@ -96,7 +120,19 @@
   <footer class="footer">
     <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
   </footer>
-  <script src="./scripts/index.js"></script>
+  <template id="template-gallary">
+  <li class="gallary__item">
+    <figure class="gallary__figure">
+      <button class="gallary__trash"></button>
+      <img class="gallary__image" src="ссылка" alt="Изображение">
+      <figcaption class="gallary__figcaption">
+        <h3 class="gallary__figcaption-title">Заголовок</h3>
+        <button type="button" class="gallary__like"></button>
+      </figcaption>
+    </figure>
+  </li>
+</template>
+ <script src="./scripts/index.js"></script>
 </body>
 
 </html>
