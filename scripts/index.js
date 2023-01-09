@@ -4,7 +4,7 @@ const aboutPopup = document.querySelector(".popup"),
   popupClose = [].slice.call(document.querySelectorAll(".popup__close")).forEach((evt) => {
     evt.addEventListener('click', closer);
   });
-const cardView = document.querySelector(".popup__view-card");
+const cardView = document.querySelector(".popup_view-card");
 // открытие
 buttonEdit.addEventListener("click", (evt) => {
   aboutPopup.classList.add("popup_opened");
@@ -19,7 +19,7 @@ function closer(evt) {
   addCardPopup.classList.remove("popup_opened");
   cardView.classList.remove("popup_opened");
 }
-// 
+//
 const formElement = aboutPopup.querySelector(".popup__form"),
   nameInput = aboutPopup.querySelector("#popup-name"),
   jobInput = aboutPopup.querySelector("#popup-job"),
@@ -39,7 +39,7 @@ formElement.addEventListener('submit', handleFormSubmit);
 
 // открытие второго popup
 const addButton = document.querySelector(".profile__add-button");
-const addCardPopup = document.querySelector(".popup__addcard");
+const addCardPopup = document.querySelector(".popup_addcard");
 
 const addCardInputName = addCardPopup.querySelector("#popup-addcard-name");
 const addCardInputLink = addCardPopup.querySelector("#popup-addcard-link");
@@ -143,12 +143,12 @@ function handleGallaryimage(evt) {
   const name = evt.target.getAttribute("alt");
   cardView.querySelector(".popup__container").setAttribute("style", "border: 0; background-color: transparent; box-shadow:none; min-width: 0");
   // cardView.querySelector(".gallary__image").setAttribute(link);
-  cardView.querySelector(".card__image").setAttribute('src', link);
-  cardView.querySelector(".card__image").setAttribute("alt", name);
-  cardView.querySelector(".card__image").setAttribute("style", "max-width:75vw; max-height: 75vh");
+  cardView.querySelector(".popup__view-card-image").setAttribute('src', link);
+  cardView.querySelector(".popup__view-card-image").setAttribute("alt", name);
+  cardView.querySelector(".popup__view-card-image").setAttribute("style", "max-width:75vw; max-height: 75vh");
 
-  cardView.querySelector(".card__title").textContent = name;
-  cardView.querySelector(".card__title").setAttribute("style", `
+  cardView.querySelector(".popup__view-card-title").textContent = name;
+  cardView.querySelector(".popup__view-card-title").setAttribute("style", `
     margin:0;
     margin-top:10px;
     padding:0;
